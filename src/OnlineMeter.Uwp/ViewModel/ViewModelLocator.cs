@@ -13,8 +13,14 @@ namespace VDsoft.OnlineMeter.Uwp.ViewModel
     /// </summary>
     public class ViewModelLocator
     {
+        /// <summary>
+        /// Current instance of the <see cref="MeterViewModel"/> class.
+        /// </summary>
         private MeterViewModel meterViewModel = null;
 
+        /// <summary>
+        /// Instance of the <see cref="GpioHandler"/> class.
+        /// </summary>
         private GpioHandler gpio = null;
 
         /// <summary>
@@ -22,6 +28,7 @@ namespace VDsoft.OnlineMeter.Uwp.ViewModel
 		/// </summary>
 		public ViewModelLocator()
         {
+            // create and initialize the handler.
             this.gpio = new GpioHandler();
         }
 

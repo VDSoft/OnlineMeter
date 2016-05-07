@@ -4,7 +4,7 @@
   <mp:PhoneIdentity PhoneProductId="cda270ab-0165-46e9-9854-b656cd2227c7" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>OnlineMeter.Uwp</DisplayName>
-    <PublisherDisplayName>djlee</PublisherDisplayName>
+    <PublisherDisplayName>Christoph van der Fecht - VDsoft</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
