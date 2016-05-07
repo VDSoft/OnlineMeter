@@ -46,8 +46,6 @@ This code can be used in commercial, free and open source projects.
                     HorizontalAlignment="Center">
             <Ellipse Fill="{Binding Path=GreenBrush}" 
                      Style="{StaticResource ResourceKey=EllipsStyle}"/>
-            <!--<Ellipse Fill="{Binding Path=YellowBrush}"
-                     Style="{StaticResource ResourceKey=EllipsStyle}"/>-->
             <Ellipse Fill="{Binding Path=RedBrush}"
                      Style="{StaticResource ResourceKey=EllipsStyle}"/>
         </StackPanel>

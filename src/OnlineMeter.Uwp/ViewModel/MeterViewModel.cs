@@ -75,6 +75,7 @@ namespace VDsoft.OnlineMeter.Uwp.ViewModel
                 this.RedBrush = this.grayBrush;
             }
 
+            // register to receive the status updates.
             Messenger.Default.Register<ConnectionResult>(this, ViewModelLocator.StatusUpdateToken, this.UpdateStatus);
             Task.Run(() => 
             {

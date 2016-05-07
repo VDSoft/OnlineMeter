@@ -51,6 +51,7 @@ namespace VDsoft.OnlineMeter.Uwp.Dal
 
             this.InitializePins(gpio);
 
+            // register to receive the status updates.
             Messenger.Default.Register<ConnectionResult>(this, ViewModelLocator.StatusUpdateToken, this.UpdateStatus);
         }
 
