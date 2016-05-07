@@ -5,6 +5,7 @@
 // -----------------------------------------------------------------------
 
 using VDsoft.OnlineMeter.Uwp.Dal;
+using Windows.System.Profile;
 
 namespace VDsoft.OnlineMeter.Uwp.ViewModel
 {
@@ -28,8 +29,12 @@ namespace VDsoft.OnlineMeter.Uwp.ViewModel
 		/// </summary>
 		public ViewModelLocator()
         {
-            // create and initialize the handler.
-            this.gpio = new GpioHandler();
+            // check the platform the application is running on.
+            if (AnalyticsInfo.VersionInfo.DeviceFamily.Equals("Windows.IoT"))
+            {
+                // create and initialize the handler.
+                this.gpio = new GpioHandler(); 
+            }
         }
 
         #region Tokens
