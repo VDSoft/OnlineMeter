@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="BlinkLed.UWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BlinkLed.UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <Style x:Key="Text" TargetType="TextBlock">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="26"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="Black">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical">
+                    <Ellipse x:Name="LEDRed" Fill="LightGray" Stroke="White" Width="100" Height="100" Margin="10"/>
+                    <TextBlock Text="500ms" Style="{StaticResource ResourceKey=Text}" />
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical">
+                    <Ellipse x:Name="LEDYellow" Fill="LightGray" Stroke="White" Width="100" Height="100" Margin="10"/>
+                    <TextBlock Text="500ms" Style="{StaticResource ResourceKey=Text}" />
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical">
+                    <Ellipse x:Name="LEDGreen" Fill="LightGray" Stroke="White" Width="100" Height="100" Margin="10"/>
+                    <TextBlock Text="500ms" Style="{StaticResource ResourceKey=Text}" />
+                </StackPanel>
+            </StackPanel>
+            <TextBlock x:Name="GpioStatus" Text="Waiting to initialize GPIO..." Margin="10,50,10,10" Style="{StaticResource ResourceKey=Text}" />
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,2 @@
+MainPackage=P:\Development\IoT Graz\BlinkLed\src\BlinkLed.UWP\bin\ARM\Debug\BlinkLed.UWP_1.0.1.0_ARM_Debug.appx
+SymbolPackage=P:\Development\IoT Graz\BlinkLed\src\BlinkLed.UWP\AppPackages\BlinkLed.UWP_1.0.1.0_Debug_Test\BlinkLed.UWP_1.0.1.0_ARM_Debug.appxsym
