@@ -11,11 +11,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("OnlineMeter.Uwp")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("UWP application to check your internet connection.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Christoph van der Fecht - VDsoft")]
 [assembly: AssemblyProduct("OnlineMeter.Uwp")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyCopyright("Copyright Christoph van der Fecht - VDsoft ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
