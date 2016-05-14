@@ -21,8 +21,8 @@ namespace VDsoft.OnlineMeter.Uwp.Model
 		/// Initializes a new instance of the <see cref="ConnectionResult"/> class.
 		/// </summary>
 		public ConnectionResult(bool online)
-            : this(online, -1)
         {
+            this.Online = online;
         }
 
         /// <summary>
